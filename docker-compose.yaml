@@ -1,0 +1,22 @@
+version: "3"
+services:
+  rails:
+    container_name: xXxXx_rails
+    build:
+      context: ./
+    volumes:
+      - ./xXxXx:/app
+    ports:
+      - 3000:3000
+    tty: true
+    restart: always
+
+  mysql:
+    container_name: mysql
+    image: mariadb:10.5.4
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
