@@ -26,7 +26,7 @@ cd フォルダ名
   MakefileのPROJECT変数の``yYyYy``を``プロジェクト名``に変更。  
   プロジェクト名とフォルダ名が違う場合はフォルダ名を指定。
 ```bash
-make name-set n=プロジェクト名
+make setup n=プロジェクト名
 ```
 
 ### 4. Dockerを起動  
